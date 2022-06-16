@@ -2,7 +2,7 @@
 This is a lightweight task and reminder app made in order to learn Vue.js and Tailwind CSS.
 
 Basic commands:
-# npm install
-# npm run serve
-# npm run build
+1.  npm install
+2.  npm run serve
+3.  npm run build
 
