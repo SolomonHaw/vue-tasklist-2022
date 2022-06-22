@@ -4,7 +4,7 @@ This is a lightweight task and reminder app made in order to learn Vue.js, Boots
 <p align="center">
   <img 
     width="350"
-    height="350"
+    height="420"
     src="/public/screencap.jpg"
   >
 </p>
