@@ -9,7 +9,7 @@ This is a lightweight task and reminder app made in order to learn Vue.js, Boots
   >
 </p>
 
-  :point_right:Link:[actnow-task-tracker.firebaseapp.com](actnow-task-tracker.firebaseapp.com)
+  :point_right:Link: [actnow-task-tracker.firebaseapp.com](actnow-task-tracker.firebaseapp.com)
 
   📜Instructions:scroll:
   Version 1.1.0
