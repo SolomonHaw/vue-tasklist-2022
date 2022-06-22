@@ -1,19 +1,8 @@
 # vue-tasklist-2022
+This is a lightweight task and reminder app made in order to learn Vue.js and Tailwind CSS.
 
-## Project setup
-```
-npm install
-```
+Basic commands:
+1.  npm install
+2.  npm run serve
+3.  npm run build
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
