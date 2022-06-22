@@ -1,8 +1,8 @@
 # vue-tasklist-2022
-This is a lightweight task and reminder app made in order to learn Vue.js and Tailwind CSS.
+This is a lightweight task and reminder app made in order to learn Vue.js, Bootstrap CSS and Firebase.
 
-Basic commands:
-1.  npm install
-2.  npm run serve
-3.  npm run build
 
+📜Instructions:scroll:
+Version 1.1.0
+1. You can add up to 5 tasks currently.
+2. You can view the update log by clicking on the "About" hyperlink at the bottom of the page.
