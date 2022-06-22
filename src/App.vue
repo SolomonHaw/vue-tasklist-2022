@@ -1,10 +1,12 @@
 <template>
-  <div class="container">
-    <Navbar />
-    <TaskHeader @toggle-add-task="toggleAddTask" 
-    title="Task Tracker" :showAddTask="showAddTask"  />
-    <router-view :showAddTask="showAddTask"></router-view>
-    <Footer />
+  <div id="app">
+    <div class="container">
+      <Navbar />
+      <TaskHeader @toggle-add-task="toggleAddTask" title="Task Tracker" 
+      :showAddTask="showAddTask" />
+      <router-view :showAddTask="showAddTask"></router-view>
+      <Footer />
+    </div>
   </div>
 </template>
 
