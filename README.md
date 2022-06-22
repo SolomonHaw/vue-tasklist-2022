@@ -1,7 +1,7 @@
 # vue-tasklist-2022
 This is a lightweight task and reminder app made in order to learn Vue.js, Bootstrap CSS and Firebase.
 
-<p align="right">
+<p align="left">
   <img 
     width="350"
     height="420"
