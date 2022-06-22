@@ -1,56 +1,36 @@
 <template>
   <div class="container">
-    <TaskHeader title="Task Tracker" />
-    <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    <Navbar />
+    <TaskHeader @toggle-add-task="toggleAddTask" 
+    title="Task Tracker" :showAddTask="showAddTask"  />
+    <router-view :showAddTask="showAddTask"></router-view>
+    <Footer />
   </div>
 </template>
 
 <script>
 import TaskHeader from './components/TaskHeader'
-import Tasks from './components/Tasks'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     TaskHeader,
-    Tasks
+    Navbar,
+    Footer
   },
   data() {
     return {
-      tasks: []
+      tasks: [],
+      showAddTask: false,
     }
   },
   methods: {
-    deleteTask(id) {
-      if (confirm('Are you sure you want to delete this task?')) {
-        this.tasks = this.tasks.filter((task) => task.id !== id)
-      }
-    },
-
-    toggleReminder
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask
+    }
   },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: 'Doctors Appointment',
-        day: 'March 1st at 2:30pm',
-        reminder: true,
-      },
-      {
-        id: 2,
-        text: 'Meeting at School',
-        day: 'March 3rd at 1:30pm',
-        reminder: true,
-      },
-      {
-        id: 3,
-        text: 'Food Shopping',
-        day: 'March 3rd at 11:00am',
-        reminder: false,
-      }
-    ]
-  }
 }
 </script>
 
@@ -68,6 +48,7 @@ body {
 }
 
 .container {
+  background-color: #d6c3bf;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;

@@ -15,6 +15,11 @@ export default {
     props: {
         task: Object,
     },
+    methods: {
+        onDelete(id) {
+            this.$emit('delete-task', id)
+        },
+    },
 }
 </script>
 
@@ -31,7 +36,7 @@ export default {
 }
 
 .task.reminder {
-    border-left: 5px solid green;
+    border-left: 10px solid purple;
 }
 
 .task h3 {

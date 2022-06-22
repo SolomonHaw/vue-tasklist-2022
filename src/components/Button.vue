@@ -1,7 +1,7 @@
 <template>
-    <button v-on:click="onClick()" :style="{background: color}" 
-    class="btn">
-    {{text}}
+    <button v-on:click="onClick()" :style="{ background: color}" 
+    type="button" class="btn btn-primary">
+        {{ text }}
     </button>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         onClick() {
-            console.log('click')
+            this.$emit('btn-click')
         },
     },
 }
